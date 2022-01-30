@@ -1,6 +1,7 @@
 import {validateLogin as vLogin, validatePassword as vPassword, validateEmail as vEmail} from './validators.mjs'
 console.log('Hello ES Modules')
 document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
+  console.log('submit')
   event.preventDefault()
   event.stopPropagation()
   if (!vLogin(document.getElementById('login').value)) {

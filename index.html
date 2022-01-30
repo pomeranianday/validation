@@ -9,24 +9,25 @@
 </head>
 
 <body>
-  <form action="/" method="post">
+  <form action="/" method="post" novalidate>
     <span id="loginError" style="color: red;display: none;">Login validation error</span>
     <br>
     <label for="login">
-      Login: <input novalidate type="text" name="login" id="login"
+      Login: <input type="text" name="login" id="login"
         placeholder="More than or equals 3 and less than or equals 25 characters">
     </label>
     <br>
     <span id="passwordError" style="color: red;display: none;">Password validation error</span>
+    <br>
     <label for="password">
-      Password: <input novalidate type="password" name="password" id="password"
+      Password: <input type="password" name="password" id="password"
         placeholder="8-16 characters and/or numbers">
     </label>
-
+    <br>
     <span id="emailError" style="color: red;display: none;">Email validation error</span>
     <br>
     <label for="email">
-      Email: <input novalidate type="email" name="email" id="email" placeholder="Enter your email">
+      Email: <input type="email" name="email" id="email" placeholder="Enter your email">
     </label>
     <br>
     <input type="submit" value="Sign Up">
